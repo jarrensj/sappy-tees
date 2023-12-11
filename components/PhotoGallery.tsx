@@ -7,7 +7,17 @@ type Photo = {
   alt: string;
 };
 
-const photos: Photo[] = [];
+const photos: Photo[] = [
+  { src: '/photos/wabdoteth.jpg', desc: 'wabdoteth', alt: 'wabdoteth'},
+  { src: '/photos/notthreadguy.jpg', desc: 'notthreadguy', alt: 'notthreadguy'},
+  { src: '/photos/wabdoteth.jpg', desc: 'wabdoteth', alt: 'wabdoteth'},
+  { src: '/photos/wabdoteth.jpg', desc: 'wabdoteth', alt: 'wabdoteth'},
+  { src: '/photos/notthreadguy.jpg', desc: 'notthreadguy', alt: 'notthreadguy'},
+  { src: '/photos/wabdoteth.jpg', desc: 'wabdoteth', alt: 'wabdoteth'},
+  { src: '/photos/notthreadguy.jpg', desc: 'notthreadguy', alt: 'notthreadguy'},  
+  { src: '/photos/wabdoteth.jpg', desc: 'wabdoteth', alt: 'wabdoteth'},
+  { src: '/photos/notthreadguy.jpg', desc: 'notthreadguy', alt: 'notthreadguy'},
+];
 
 const shuffleArray = (array: Photo[]): Photo[] => {
   return array
