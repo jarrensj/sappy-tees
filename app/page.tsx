@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Seal from '../components/Seal'
 import Footer from '../components/Footer'
 import PhotoGallery from '@/components/PhotoGallery'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         </p>
         <Seal />
         <PhotoGallery />
+        <Contact />
       </main>
       <Footer />
     </>
