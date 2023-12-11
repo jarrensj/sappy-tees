@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 type Photo = {
@@ -27,8 +29,12 @@ const shuffleArray = (array: Photo[]): Photo[] => {
 };
 
 const PhotoGallery: React.FC = () => {
-  const shuffledImages = shuffleArray(photos);
+  const [shuffledImages, setShuffledImages] = useState<Photo[]>([]);
 
+  useEffect(() => {
+    setShuffledImages(shuffleArray(photos));
+  }, []);
+  
   return (
     <div className="container mx-auto p-4">
       <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
