@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Seal from '../components/Seal'
 import Footer from '../components/Footer'
+import PhotoGallery from '@/components/PhotoGallery'
+
 export default function Home() {
   return (
     <>
@@ -13,6 +15,7 @@ export default function Home() {
           </Link>
         </p>
         <Seal />
+        <PhotoGallery />
       </main>
       <Footer />
     </>
