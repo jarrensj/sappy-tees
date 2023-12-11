@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Seal from '../components/Seal'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
           oversized dropped shoulder 280 gsm 8.2oz vintage retro inspired heavyweight luxury limited edition 24 hour exclusive sappy seal t-shirt
         </Link>
       </p>
+      <Seal />
     </main>
   )
 }
